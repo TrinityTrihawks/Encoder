@@ -23,7 +23,7 @@ public class Robot extends IterativeRobot {
     String autoSelected;
     Victor arm1 = new Victor(4);
     Victor arm2 = new Victor(6);
-    Encoder encode = new Encoder(0,1,false,EncodingType.k1X);
+    Encoder encode = new Encoder(1,0,false,EncodingType.k4X);
    
     /**
      * This function is run when the robot is first started up and should be
@@ -54,11 +54,11 @@ public class Robot extends IterativeRobot {
     	
     	System.out.println("Hi Doug!!!");
 
-    	encode.setDistancePerPulse(1);
+    	encode.setDistancePerPulse(.1);
         // encode.setMaxPeriod(.1);
-        encode.setMinRate(.1);
-        encode.setReverseDirection(true);
-        encode.setSamplesToAverage(2);
+        encode.setMinRate(64);
+        // encode.setReverseDirection(true);
+        encode.setSamplesToAverage(127);
     	encode.reset();
     	
     	/*
