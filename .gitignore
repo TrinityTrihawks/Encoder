@@ -1,0 +1,16 @@
+!gradle/wrapper/gradle-wrapper.jar
+*.pydevproject
+.metadata
+bin/
+build/
+tmp/
+.gradle/
+run/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
